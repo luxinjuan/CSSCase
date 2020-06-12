@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 使用 transform 变形 */
+        body{
+	     margin:0     /*设置外边距为0 */
+	    }
+        #father{
+            height: 100vh;
+            background-color: cyan;  
+        }
+        #son{
+            width: 10%;     /* 则向X轴偏移45%，translateX:45/10=4.5，即450% */
+            height: 20%;  /* 则向X轴偏移40%，translateY:40/20=2，即200% */
+            background-color: pink;
+            transform: translate(450%,200%);
+        }
+    </style>
+</head>
+<body>
+    <div id="father">
+        <div id="son"></div>
+    </div>
+</body>
+</html>
